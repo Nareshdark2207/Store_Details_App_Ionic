@@ -1,0 +1,62 @@
+
+<ion-content>
+
+    <div class="floating-form">
+      
+      <div class='floating-heading'>
+        <h4>Welcome back </h4>
+        <p class="access">Login to access your store services</p>
+      </div>
+        
+      <div class="floating-label">      
+        <input class="floating-input" type="email" placeholder=" ">
+        <span class="highlight"></span>
+        <label>Email Address</label>
+      </div>
+
+      <div class="floating-label-001">      
+        <input class="floating-input" type="password" placeholder=" ">
+        <span class="highlight"></span>
+        <label>Password</label>
+      </div>
+        <ion-row>
+          <ion-col size="1">
+            <div class="remains">
+            <ion-checkbox></ion-checkbox>
+            </div>
+          </ion-col>
+          <ion-col size="6">
+            <div class="remains">
+            <p> Remember Me </p>
+            </div>
+          </ion-col>
+          <ion-col size="5"> 
+            <div class="center">
+              <p (click)="openModal()">Forgot Password ? </p>
+            </div>
+          </ion-col>
+        </ion-row>
+
+      <div class="text-center">
+        <button class="btn btn-primary" [routerLink]="['/storelist']">Login</button>
+      </div>
+      <div class="else"><h5>Or Login with</h5></div>
+     <ion-row>
+       <ion-col size="6">
+        <div class="text-center">
+          <button class="btn-outline"><ion-icon name="logo-apple"></ion-icon>Apple</button>
+        </div>
+       </ion-col>
+        <ion-col size="6">
+          <div class="text-center">
+            <button class="btn-outline"><ion-icon name="logo-google"></ion-icon>Google</button>
+          </div>
+        </ion-col> 
+     </ion-row>
+    </div>
+
+    <div class="signup">
+      <p>Don't have an account ? <span [routerLink]="['/register']" >Register</span></p>
+    </div>
+
+</ion-content>

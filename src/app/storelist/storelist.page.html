@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Stores</ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="storeinfo">
+    <div class="title">
+      <h5 class="mb01">Store Information</h5>
+      <p>Please fill in the details below so that we can get in the contact you</p>
+    </div> 
+
+     <div class="floating-label">      
+        <input class="floating-input" type="text" placeholder=" ">
+        <span class="highlight"></span>
+        <label>Name</label>
+      </div>
+  
+      <div class="floating-label">      
+        <input class="floating-input" type="password" placeholder=" ">
+        <span class="highlight"></span>
+        <label>Address</label>
+      </div>
+    
+      <div class="floating-label">      
+        <input class="floating-input" type="number" placeholder=" ">
+        <span class="highlight"></span>
+        <label>Phone number</label>
+      </div>
+
+      <div class="floating-label">      
+        <input class="floating-input" type="text" placeholder=" ">
+        <span class="highlight"></span>
+        <label>City</label>
+      </div>
+
+      <div class="floating-label">      
+        <input class="floating-input" type="text" placeholder=" ">
+        <span class="highlight"></span>
+        <label>State</label>
+      </div>
+
+      <div class="floating-label">      
+        <input class="floating-input" type="number" placeholder=" ">
+        <span class="highlight"></span>
+        <label>Zipcode</label>
+      </div>
+
+      <div class="floating-label">      
+        <input class="floating-input" type="text" placeholder=" ">
+        <span class="highlight"></span>
+        <label>Supervisor Name</label>
+      </div>
+      
+      <div class="floating-label">      
+        <input class="floating-input" type="number" placeholder=" ">
+        <span class="highlight"></span>
+        <label>Supervisor phone number</label>
+      </div>
+
+      <div class='floating-label'>
+        <input class="floating-input" type='file' placeholder="upload image " />
+      </div>
+
+      <div class="mb-0">
+        <button class="btn btn-primary" [routerLink]="['/storedetails']">Save</button>
+      </div>
+  </div>
+
+</ion-content>

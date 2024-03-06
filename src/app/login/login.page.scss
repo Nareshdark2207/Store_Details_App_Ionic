@@ -1,0 +1,239 @@
+
+.floating-form {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.floating-heading{
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  position: relative;
+  bottom: 50px;
+}
+
+.floating-heading h4{
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+.floating-heading p{
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  margin-top: 0px;
+  color: #5c5c5c;
+}
+  /****  floating-Lable style start ****/
+  .floating-label { 
+    position:relative; 
+    margin-bottom:50px; 
+    font-family: 'Rubik', sans-serif;
+  }
+  .floating-label-001{
+    position:relative; 
+    margin-bottom:5px; 
+    font-family: 'Rubik', sans-serif;
+  }
+  .floating-input  {
+    font-size:14px;
+    font-family: 'Rubik', sans-serif;
+    padding:4px 4px;
+    display:block;
+    width:100%;
+    height:35px;
+    background-color: transparent;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+  
+  .floating-input:focus {
+       outline:none;
+       border-bottom:2px solid #3880ff; 
+  }
+  
+  label {
+    color:#999; 
+    font-size:16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:5px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  .floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+    top:-18px;
+    font-size:12px;
+    color:#3880ff;
+  }
+  
+
+  
+  /* active state */
+  .floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after {
+    width:50%;
+  }
+  
+  *, *:before, *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  
+
+  
+  /* highlighter */
+  .highlight {
+    position:absolute;
+    height:50%; 
+    width:100%; 
+    top:15%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+
+  .btn{
+      width:100%;
+      height:auto;
+      padding:20px;
+      cursor:pointer;
+      font-size:16px;
+      font-family: 'Rubik', sans-serif;
+      background-color: #3880ff;
+      border-radius: 5px;
+      color: #fff;
+      margin-top: 30px;
+  }
+  .btn-outline{
+    width:100%;
+    height: auto;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    border: 1px solid #525252;
+    background: transparent;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 15px;
+  }
+
+  ion-icon{
+    font-size: 18px;
+    position: relative;
+    right: 12%;
+    top: 0.15rem;
+  }
+  .center{
+    //text-align: right;
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+    font-size: 14.5px;
+    margin-top: 25px;
+    color: #ec8080;
+    cursor: pointer;
+  }
+  .remains{
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+    font-size: 14.5px;
+    margin-top: 25px;
+  }
+  .signup{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    top: 90%;
+    font-size: 14px;
+  }
+  
+  .signup span{
+   color:#3880ff;
+   font-family: 'Rubik', sans-serif;
+   cursor: pointer;
+   font-weight: normal;
+  }
+
+  .else h5 {
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    font-size: 12px;
+    color:#5f5f5f;
+  }
+  
+  .else h5:before,
+  .else h5:after {
+    background: #353434;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+      top: 50%;
+    width: 400%;
+  }
+  .else h5:before {
+    right: 100%;
+  }
+  .else h5:after {
+    left: 100%;
+  }
+  .else {
+    overflow: hidden;
+    text-align: center;
+    margin-top: 20px;
+  }
+  /* active state */
+  .floating-input:focus ~ .highlight , .floating-select:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* animation */
+  @-webkit-keyframes inputHighlighter {
+      from { background:#3880ff; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+      from { background:#3880ff; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+      from { background:#3880ff; }
+    to 	{ width:0; background:transparent; }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

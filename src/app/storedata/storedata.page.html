@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon class="edit" name="pencil"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Nilgiris Stores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-slide-pager>
+      <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide *ngFor="let slide of slides let i = index" >
+          <img class="slide-image" [src]="slide.imageUrl" alt="Card image cap">
+        </ion-slide>
+      </ion-slides>
+    </ion-slide-pager>
+
+    <div class="floating-details" >
+
+      <div class='floating-heading'>
+        <h4>Nilgiris Supermarket</h4>
+        <p>Departmental Stores</p>
+      </div>
+
+      <ion-card *ngFor="let details of information">
+        <ion-card-header>
+          <h2>{{details.title}}</h2>
+        </ion-card-header>
+        <ion-card-content>
+          <p>{{details.output}}.</p>
+        </ion-card-content>
+     </ion-card>
+
+  </div>
+
+  <div class="mb-00">
+    <button class="btn btn-primary" [routerLink]="['/storelist']">Continue</button>
+  </div>
+
+</ion-content>

@@ -1,0 +1,61 @@
+ .floating-heading{
+    margin-top: 30px;
+    margin-bottom: 30px; 
+ }
+ 
+ .floating-heading h4{
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+  }
+  
+  .floating-heading p{
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    margin-top: -5px;
+    color: #5c5c5c;
+  }
+
+  ion-card-header h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #ffffff;
+  }
+
+  ion-card-content p{
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+    color: #5d5d5dee;
+}
+
+.btn{
+    width: 94%;
+    height: auto;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    background-color: #3880ff;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+.mb-00{
+    margin-bottom: 20px;
+}
+
+.edit{
+    font-size:18px;
+}
+
+ion-button{
+    border:1px solid #fff;
+    border-radius: 5px;
+}

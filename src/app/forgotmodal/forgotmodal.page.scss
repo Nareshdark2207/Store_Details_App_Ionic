@@ -1,0 +1,109 @@
+.floating-form {
+    width: 90%;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.floating-heading{
+    margin-bottom: 80px;
+}
+
+.floating-heading h4{
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+  }
+  
+  .floating-heading p{
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    margin-top: 0px;
+    color: #5c5c5c;
+  }
+
+  .floating-label { 
+    position:relative; 
+    margin-bottom:50px; 
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .floating-input  {
+    font-size:14px;
+    font-family: 'Rubik', sans-serif;
+    padding:4px 4px;
+    display:block;
+    width:100%;
+    height:35px;
+    background-color: transparent;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+  
+  .floating-input:focus {
+       outline:none;
+       border-bottom:2px solid #3880ff; 
+  }
+  
+  label {
+    color:#999; 
+    font-size:16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:5px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  .floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+    top:-18px;
+    font-size:12px;
+    color:#3880ff;
+  }
+  
+
+  
+  /* active state */
+  .floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after {
+    width:50%;
+  }
+  
+  *, *:before, *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  
+
+  
+  /* highlighter */
+  .highlight {
+    position:absolute;
+    height:50%; 
+    width:100%; 
+    top:15%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+
+  .btn{
+      width:100%;
+      height:auto;
+      padding:20px;
+      cursor:pointer;
+      font-size:16px;
+      font-family: 'Rubik', sans-serif;
+      background-color: #3880ff;
+      border-radius: 5px;
+      color: #fff;
+  }

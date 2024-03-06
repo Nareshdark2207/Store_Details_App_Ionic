@@ -1,0 +1,26 @@
+<header>
+  <ion-toolbar class="toolbar-container">
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">
+        <ion-icon slot="icon-only" size="large" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</header>
+<ion-content>
+  <div class='floating-form'>
+    <div class='floating-heading'>
+      <h4>Forgot Password </h4>
+      <p>Enter your email address for verification process. we will send 4 digit code to your email.</p>
+    </div>
+    <div class="floating-label">      
+      <input class="floating-input" type="email" placeholder=" ">
+      <span class="highlight"></span>
+      <label>Email Address</label>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-primary" [routerLink]="['/login']">Continue</button>
+    </div>
+  </div>
+ 
+</ion-content>
